@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('duree_locations', function (Blueprint $table) {
             $table->id();
             $table->string('libelle');
-            $table->time('valeur'); 
+            $table->time('valeurEnHeure');
             $table->timestamps();
         });
     }

@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->dateTime('dateFin');
             $table->dateTime('dateDebut');
-            $table->foreignId('client_id');
-            $table->foreignId('user_id');
-            $table->foreignId('statut_location_id');
+            $table->foreignId('client_id')->constrained();
+            $table->foreignId('user_id')->constrained();
+            $table->foreignId('statut_location_id')->constrained();
         });
 
         Schema::enableForeignKeyConstraints();

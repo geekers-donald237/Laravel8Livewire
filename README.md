@@ -32,6 +32,7 @@
 9. for specific seed => php artisan migrate:fresh --seed --seeder=UserSeeder
 10. for adding toast => composer require brian2694/laravel-toastr
 11. for knowing the version of laravel  =>  php artisan --version 
+12. for creat efactory and mdodel => php artisan make:model nom -f
 
 
      

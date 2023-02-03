@@ -25,9 +25,10 @@ return new class extends Migration
             $table->string('pays');
             $table->string('addresse');
             $table->string('telephone1');
+            $table->string("email")->nullable();
             $table->string('telephone2')->nullable();
-            $table->string('piecesIdentite');
-            $table->string('noPiecesIdentites');
+            $table->string('pieceIdentite');
+            $table->string('noPiecesIdentite');
             $table->timestamps();
         });
     }

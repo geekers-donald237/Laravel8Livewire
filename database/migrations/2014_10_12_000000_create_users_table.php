@@ -20,8 +20,8 @@ return new class extends Migration
             $table->char('sexe');
             $table->string('telephone1');
             $table->string('telephone2')->nullable();
-            $table->string('piecesIdentites');
-            $table->string('numeroPiecesIdentite');
+            $table->string('pieceIdentite');
+            $table->string('numeroPieceIdentite');
             $table->string('email')->unique();
             $table->string('password');
             $table->string('photo');

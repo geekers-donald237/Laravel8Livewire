@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('tarification', function (Blueprint $table) {
             $table->id();
             $table->foreignId('duree_location_id')->constrained('duree_locations');
-            $table->foreignId('article_id');
+            $table->foreignId('article_id')->constrained();
             $table->double('prix');
             $table->timestamps();
         });

@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('type_articles', function (Blueprint $table) {
             $table->id();
-            $table->string("nom");
+            $table->string("nom")->unique();
             $table->timestamps();
         });
     }
